@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    padding : 0px;
+    margin : 0px;
+    line-height: 1.5;
+}
+img{
+    border-radius: 50%;
+    box-shadow: #ffffff 0px 0px 15px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /*font-family: 'Roboto mono', monospace;*/
+    font-family: monospace;
+    font-size: medium;
+}
+table{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+td{
+    font-weight: 700;
+    width: 40%;
+    text-align: start;
+    word-wrap: break-word;
+}
+hr{
+    color: black;
+    margin: 2px;
+    width: 60%;
+}
+
+h4{
+    font-family: 'DM Mono', monospace;
+}
+p{
+    margin-left: 10px;
+    margin-right: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+b{
+    color: #0077b5;
+}
+.mail{
+    font-weight: 100;
+    font-style: italic;
+}
+
+.mail a{
+    text-decoration: none;
+    color:#0077b5;
+    
+    transition: color 0.3s;
+}
+
+.mail a:hover {
+    color: #0077b5;
+    text-decoration: underline;
+}
+
+.body{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url("Media/index_bg.png");
+
+    background-color: rgb(255, 250, 233);
+}
+
+.bg-card{
+    margin : 10px;
+    padding: 20px;
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    
+    /*background-color: #f4f4f6;
+    background-color: #e3e3e3;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px;*/
+}
+
+.profile{
+    margin : 8px;
+    padding : 8px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+
+.profile-bg{
+    height: fit-content;
+    width:fit-content;
+    padding: 5px;
+    background-color:#ffffff;
+    border-radius: 50%;
+}
+.details{
+    margin-left: 20px;
+    padding-top: 20px;
+
+    /*
+    display: flex;
+    flex-direction: column;
+    justify-content: center;*/
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.social-icons a{
+    color: #333;
+    margin: 8px;
+    transition: color 0.3s;
+}
+.social-icons a img{
+    border-radius: 0px;
+}
+.social-icons a:hover {
+    color: #0077b5; /* Example: LinkedIn blue */
+}
+
+.gallery-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.gallery {
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5px;
+    column-gap: 5px;
+    padding: 1px; 
+}
+
+.gallery img{
+    border-radius: 1px;
+    object-fit: cover;
+}
+
+.footer{
+
+    margin : 8px;
+    padding : 8px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.text{
+    margin : 8px;
+    padding : 8px;
+}
+.projects table{
+    align-items:  center;
+}
+
+.bio{
+    text-indent: 20%;
+}
+.name{
+    /*font-family: 'Sacramento', cursive;
+    font-size: 40px;
+    color: #636b2f;*/
+    color:#63754c;
+}
+.head{
+    color: #63754c;
+    margin-left: 5px;
+}
+
+
+.icons{
+    width: 24px;
+    height: 24px;
+    margin: 2px;
+    border-radius: 0px;
+
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 0px;
+    margin-right: 3px;
+}
+
+.card{
+    margin : 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: fit-content;
+
+
+    text-align: center;
+    font-size: 15px;
+
+    color: white;
+    background-color: #63754c; /*#636b2f; /*#f4f4f6;*/
+    
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.card-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}   
+
+.card-wrapper a{
+    color: white;
+}
+
+.card-wrapper div:hover{
+    background-color: #c6d278;
+}
+
+.card-wrapper-courses {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 16px;
+    padding: 16px;
+  }
+  
+.card-courses {
+    height: 150px;
+    width: 150px;
+    /*background-color: #63754c;*/
+    border-radius: 8px;
+    text-align: center;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+
+
+    background-image: url('Media/course_card.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* 
+    Not the correct way to add
+    But i did it anyways!
+*/
+.card-courses div a {
+    text-decoration: none;
+    color: inherit;
+
+    position: absolute;
+    width: inherit;
+    height: inherit;
+
+    background-color: transparent;
+}
+
+.card-courses div{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+
+    background-color:#014e771d;
+}
+
+.card-courses div p{
+    padding: 0px;
+    margin: 0px;
+
+    font-size: 14px;
+    color:#333;
+    text-shadow: #f4f4f4 0px 0px 2px;
+}
+/*
+.card-courses h4{
+    width: inherit;
+    text-wrap: wrap;
+    position: absolute;
+}*/
+.card-courses div h4 {
+    height: fit-content;
+    width: 90%;
+    text-wrap: wrap;
+
+    padding: 0px;
+
+    
+    font-size: 16px;
+    color:#333;
+    text-shadow: #f4f4f4 0px 0px 4px;
+    /*text-shadow: #f4f4f4 0px 0px 4px;*/
+}
+
+
+
+.card-courses:hover {
+    transform: scale(1.05);
+}
+
+.achievements-table td{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 30%;
+    
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .bg-card {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details {
+        margin-left: 0;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .gallery-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-wrapper {
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: fit-content;
+        margin: 8px 0;
+        font-size: 14px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    table {
+        width: 100%;
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    td {
+        width: auto;
+        padding: 4px;
+    }
+
+    .bio {
+        text-indent: 0%;
+        text-align: justify;
+    }
+
+    .footer {
+        text-align: center;
+        position-anchor: bottom;
+    }
+}
