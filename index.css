@@ -19,7 +19,7 @@ body{
 
     /*font-family: 'Roboto mono', monospace;*/
     font-family: monospace;
-    font-size: medium;
+    font-size: 14px;
 }
 table{
     margin-left: 10%;
@@ -29,6 +29,7 @@ td{
     font-weight: 700;
     width: 40%;
     text-align: start;
+    vertical-align: top;
     word-wrap: break-word;
 }
 hr{
@@ -49,6 +50,11 @@ p{
 b{
     color: #0077b5;
 }
+
+.back{
+    color: #0077b5;
+}
+
 .mail{
     font-weight: 100;
     font-style: italic;
@@ -340,10 +346,26 @@ b{
 }
 
 .achievements-table td{
+    padding-top : 5px;
+    padding-bottom : 5px;
     padding-left: 5px;
     padding-right: 5px;
     width: 30%;
     
+}
+
+.achievements{
+    color :  #0077b5;   
+}
+
+.projects-table td{
+    padding-top : 3px;
+    padding-bottom : 3px;
+}
+
+.projects-table tr td a{
+    color : #0077b5;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
